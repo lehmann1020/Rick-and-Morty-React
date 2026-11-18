@@ -4,7 +4,7 @@ import AboutPage from './pages/AboutPage.jsx'
 import NotFoundPage from "./pages/NotFound.jsx"
 import CharactersPage from "./pages/CharactersPage.jsx"
 import ErrorPage from "./pages/ErrorPage.jsx"
-import { createBrowserRouter } from 'react-router'
+import { createBrowserRouter, createHashRouter } from 'react-router'
 import CharacterDetailsPage from './pages/CharacterDetailsPage.jsx'
 
 // GitHub Pages has no server to send every path to index.html, so the built app uses #/about.
