@@ -7,7 +7,10 @@ import ErrorPage from "./pages/ErrorPage.jsx"
 import { createBrowserRouter } from 'react-router'
 import CharacterDetailsPage from './pages/CharacterDetailsPage.jsx'
 
-const router = createBrowserRouter([
+// GitHub Pages has no server to send every path to index.html, so the built app uses #/about.
+const createRouter = import.meta.env.PROD ? createHashRouter : createBrowserRouter
+
+const router = createRouter([
     {
         path: '/',
         element: <App />,
